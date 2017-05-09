@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">秘密</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_activity_mould">MouldActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="community">社区</string>
+    <string name="nutrition">资讯</string>
+    <string name="talk">咨询</string>
+    <string name="mould">塑形</string>
+    <string name="user">我</string>
+
+    <!-- 登录 -->
+    <string name="title_main">登录</string>
+    <string name="userName">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登    录</string>
+    <string name="register">注    册</string>
+    <string name="instruction">使用说明</string>
+
+    <!-- 主界面 -->
+    <string name="welcome">欢迎使用！</string>
+
+    <!-- 注册 -->
+    <string name="repassword">重复密码</string>
+    <string name="register_title">注册</string>
+    <string name="spin_prompt">联系方式</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="telephone">telephone</string>
+
+    <string-array name="communication_way">
+        <item>手机号</item>
+        <item>邮箱</item>
+        <item>QQ</item>
+        <item>微信</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 注册须知 -->
+    <string name="titleOfInstrction">注册须知</string>
+    <string name="agreement">在您开始注册之前，请先阅读以下条款：\n
+一、遵守中华人民共和国法律法令和其他相关法规，不可发布破坏宪法和法律、法规的信息。\n
+二、遵守公安部关于《计算机信息网络国际联网安全保护管理办法》的规定，自觉维护计算机信息网络的安全。\n
+三、不得在网上宣扬封建迷信、淫秽、色情、暴力、赌博等不正当行为。\n
+四、企业或个人发布的信息要真实有效、准确完整，并不得有引人误解或者虚假的陈述。\n
+五、申请人必须填写详细、真实信息，如性别、电话等。因信息填写不真实、不完整或填写错误的本网站不予以发表。\n
+六、用户注册成功后，请妥善保管您的用户名和密码，以备下次发布、修改信息使用。\n</string>
+    <string name="agree">我同意</string>
+    <string name="disagree">我不同意</string>
+    <string name="next">下一步</string>
+    <string name="goback">返回</string>
+
+    <!-- 使用说明 -->
+    <string name="content">	    1、用户必须提供真实的个人信息\n
+	    </string>
+    <string name="exit">退出</string>
+
+
+    <string name="menu_local_video">本地视频</string>
+    <string name="menu_online_video">在线视频</string>
+
+
+    <string name="cube_views_load_more_loading">loading...</string>
+    <string name="cube_views_load_more_click_to_load_more">Click to load more</string>
+    <string name="cube_views_load_more_loaded_no_more">All the data has been loaded</string>
+    <string name="cube_views_load_more_loaded_empty">It is empty. :(</string>
+    <string name="cube_views_load_more_error">Load error, click to retry</string>
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <!--<string name="exit">Exit</string>-->
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="show_info">Info</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+
+
+    <string name="giraffe_player_url_empty">Please specify the address of the video playback</string>
+
+    <string name="small_problem">Player encountered a small problem</string>
+
+    <string name="can_not_play">can not play this video</string>
+
+    <string name="not_support">player not support this device</string>
+
+</resources>

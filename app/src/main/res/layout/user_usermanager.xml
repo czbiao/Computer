@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgColor">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:id="@+id/user_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/user_maneger_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账户管理"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="用户名"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/getusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arrow"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cac9c9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="用户密码"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/getpasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arrow"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cac9c9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="用户性别"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/getsex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arrow"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cac9c9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/getcommun_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="联系方式"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/getphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arrow"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

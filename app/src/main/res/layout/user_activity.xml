@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/bgColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:id="@+id/user_sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="阳光值"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="知己"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/user_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="签到"
+            android:textColor="@android:color/background_light"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/login"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:background="@drawable/hanshi"
+                    android:text="未登录"
+                    android:src="@drawable/shape_btn_user"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/login_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="登录"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/user_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="好友"
+                    android:background="@drawable/shape"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"/>
+                <Button
+                    android:id="@+id/user_favor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="收藏"
+                    android:background="@drawable/shape"
+                    android:textSize="18sp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"/>
+                <Button
+                    android:id="@+id/user_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="历史"
+                    android:background="@drawable/shape"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <!--<Button-->
+                    <!--android:id="@+id/user_btn_1"-->
+                    <!--style="@style/my_activity_btn"-->
+                    <!--android:drawableLeft="@drawable/wallet"-->
+                    <!--android:text="钱包"-->
+                    <!--android:layout_marginLeft="4dp"-->
+                    <!--android:layout_marginRight="4dp"/>-->
+
+                <Button
+                    android:id="@+id/user_btn_2"
+                    style="@style/my_activity_btn"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:drawableLeft="@drawable/user"
+                    android:text="账户管理"/>
+
+                <Button
+                    android:id="@+id/user_btn_3"
+                    style="@style/my_activity_btn"
+                    android:drawableLeft="@drawable/user_add"
+                    android:text="邀请好友"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+
+                <!--<Button-->
+                    <!--android:id="@+id/user_btn_4"-->
+                    <!--style="@style/my_activity_btn"-->
+                    <!--android:drawableLeft="@drawable/calendar"-->
+                    <!--android:text="大姨妈"-->
+                    <!--android:layout_marginLeft="4dp"-->
+                    <!--android:layout_marginRight="4dp"/>-->
+
+                <Button
+                    android:id="@+id/user_btn_5"
+                    style="@style/my_activity_btn"
+                    android:drawableLeft="@drawable/headset"
+                    android:text="联系客服"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>
