@@ -40,8 +40,8 @@ public class SignCalendarActivity extends Activity {
 
 		// 初始化DBManager
         dbManager = new DBManager(this);
-        SimpleDateFormat    formatter    =   new    SimpleDateFormat    ("yyyy-MM-dd");       
-		Date    curDate    =   new    Date(System.currentTimeMillis());//获取当前时间       
+        SimpleDateFormat    formatter    =   new    SimpleDateFormat    ("yyyy-MM-dd");
+		Date    curDate    =   new    Date(System.currentTimeMillis());//获取当前时间
 		date1 =formatter.format(curDate);
 
 
@@ -69,9 +69,20 @@ public class SignCalendarActivity extends Activity {
 					R.drawable.calendar_date_focused);				
 		}
 
-		add("2017-04-10");
-		add("2017-04-02");
-		add("2017-04-28");
+		add("2018-01-01");
+		add("2018-01-02");
+		add("2018-01-05");
+		add("2018-02-01");
+		add("2018-02-25");
+		add("2018-03-29");
+		add("2018-03-06");
+		add("2018-03-20");
+		add("2018-04-04");
+		add("2018-04-09");
+		add("2018-04-14");
+		add("2018-04-28");
+		add("2018-05-04");
+		add("2018-05-14");
 		query();
 		if(isinput){
 			btn_signIn.setText("今日已签，明日继续");
@@ -91,7 +102,7 @@ public class SignCalendarActivity extends Activity {
             //calendar.addMark(today, 0);
            	query();
             HashMap<String, Integer> bg = new HashMap<String, Integer>();
-            
+
             calendar.setCalendarDayBgColor(today, R.drawable.bg_sign_today);
             btn_signIn.setText("今日已签，明日继续");
             btn_signIn.setBackgroundResource(R.drawable.button_gray);
@@ -133,7 +144,7 @@ public class SignCalendarActivity extends Activity {
 			}
 		});
 	}
-	
+
 	 public void add(String date)
 	    {
 	        ArrayList<sqlit> persons = new ArrayList<sqlit>();

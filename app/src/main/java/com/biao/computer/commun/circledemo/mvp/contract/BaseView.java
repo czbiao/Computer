@@ -1,7 +1,7 @@
 package com.biao.computer.commun.circledemo.mvp.contract;
 
 /**
- * Created by yiwei on 16/4/1.
+ * Created by biao on 16/4/1.
  */
 public interface BaseView {
     void showLoading(String msg);

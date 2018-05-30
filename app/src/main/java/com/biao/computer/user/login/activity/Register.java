@@ -275,7 +275,7 @@ public class Register extends Activity {
                     HttpEntity entity = new UrlEncodedFormEntity(list,"UTF-8");
                     Log.i("register----------->", "HttpPost前");
                     System.out.println("HttpPost前");
-                    HttpPost post = new HttpPost("http://139.199.171.66:8080/server/Servlet");
+                    HttpPost post = new HttpPost("http://biaohstc.cn:8080/server/Servlet");
                     System.out.println("发送请求");
                     Log.i("register----------->", "HttpPost后1");
                     System.out.println("HttpPost后1");

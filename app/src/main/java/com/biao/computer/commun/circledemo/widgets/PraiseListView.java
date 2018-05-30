@@ -21,7 +21,7 @@ import com.biao.computer.commun.circledemo.spannable.SpannableClickable;
 import java.util.List;
 
 /**
- * Created by yiwei on 16/7/9.
+ * Created by biao on 16/7/9.
  */
 public class PraiseListView extends TextView{
 

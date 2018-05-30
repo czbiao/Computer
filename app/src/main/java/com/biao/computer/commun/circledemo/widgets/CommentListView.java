@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by yiwei on 16/7/9.
+ * Created by biao on 16/7/9.
  */
 public class CommentListView extends LinearLayout {
     private int itemColor;
@@ -173,7 +173,7 @@ public class CommentListView extends LinearLayout {
         subjectSpanText.setSpan(new SpannableClickable(itemColor){
                                     @Override
                                     public void onClick(View widget) {
-                                        Toast.makeText(MyApplication.getContext(), textStr + " &id = " + id, Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(MyApplication.getContext(), textStr, Toast.LENGTH_SHORT).show();
                                     }
                                 }, 0, subjectSpanText.length(),
                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

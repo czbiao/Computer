@@ -1,7 +1,7 @@
 package com.biao.computer.commun.circledemo.bean;
 
 /**
- * Created by yiwei on 16/3/2.
+ * Created by biao on 16/3/2.
  */
 public class CommentConfig {
     public static enum Type{

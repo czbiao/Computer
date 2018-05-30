@@ -35,7 +35,7 @@ public class VideoPlayView extends RelativeLayout implements MediaPlayer.OnInfoL
     private View rView;
     private Context mContext;
     private boolean portrait;
-//    private OrientationEventListener orientationEventListener;
+    private OrientationEventListener orientationEventListener;
 
     public VideoPlayView(Context context) {
         super(context);
@@ -79,7 +79,7 @@ public class VideoPlayView extends RelativeLayout implements MediaPlayer.OnInfoL
 
     private void initActions() {
 
-        /*orientationEventListener = new OrientationEventListener(mContext) {
+        orientationEventListener = new OrientationEventListener(mContext) {
             @Override
             public void onOrientationChanged(int orientation) {
                 Log.e("onOrientationChanged", "orientation");
@@ -96,7 +96,7 @@ public class VideoPlayView extends RelativeLayout implements MediaPlayer.OnInfoL
                     }
                 }
             }
-        };*/
+        };
     }
 
     public boolean isPlay() {

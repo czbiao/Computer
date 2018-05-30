@@ -42,7 +42,7 @@
                 android:layout_marginLeft="54dp"
                 android:singleLine="true"
                 android:gravity="center_vertical"
-                android:text="Logo"
+                android:text="搜索计算机知识"
                 android:textColor="#212121"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 

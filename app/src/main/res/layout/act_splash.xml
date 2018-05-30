@@ -26,5 +26,5 @@
         android:layout_below="@+id/iv_logo"
         android:layout_centerInParent="true"
         android:padding="10dp"
-        android:text="这个是一个启动页面" />
+        android:text="请稍后，程序正在启动" />
 </RelativeLayout>

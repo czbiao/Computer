@@ -51,16 +51,16 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/user_people"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:paddingLeft="40dp"
-            android:drawablePadding="10dp"
-            android:textAlignment="textStart"
-            android:text="人工客服"
-            android:drawableLeft="@drawable/user_people"/>
+        <!--<Button-->
+            <!--android:id="@+id/user_people"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/shape"-->
+            <!--android:paddingLeft="40dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:text="人工客服"-->
+            <!--android:drawableLeft="@drawable/user_people"/>-->
         <Button
             android:id="@+id/user_wechat"
             android:layout_width="match_parent"
@@ -72,17 +72,18 @@
             android:textAlignment="textStart"
             android:text="微信客服"
             android:drawableLeft="@drawable/user_wechat"/>
+
         <Button
             android:id="@+id/user_customer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape"
             android:layout_marginTop="10dp"
-            android:paddingLeft="40dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/user_customer"
             android:drawablePadding="10dp"
-            android:textAlignment="textStart"
-            android:text="问题咨询"
-            android:drawableLeft="@drawable/user_customer"/>
+            android:paddingLeft="40dp"
+            android:text="意见反馈"
+            android:textAlignment="textStart"/>
         <Button
             android:id="@+id/user_phone"
             android:layout_width="match_parent"

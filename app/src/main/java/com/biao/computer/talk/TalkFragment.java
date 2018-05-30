@@ -45,7 +45,7 @@ public class TalkFragment extends Fragment implements View.OnClickListener {
             mImageView.setImageBitmap(mBitmap);
         }
     };
-    private String path="http://139.199.171.66:8080/server/222.jpg";
+    private String path="http://biaohstc.cn:8080/server/222.jpg";
     private ImageCycleView mImageCycleView;
 
 

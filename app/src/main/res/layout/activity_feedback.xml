@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:id="@+id/reback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="返回"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/user_maneger_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="意见反馈"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/feedback_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/reback"
+            android:layout_alignBottom="@+id/reback"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dp" >
+
+        <EditText
+            android:id="@+id/feedback_content_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape"
+            android:gravity="top"
+            android:hint="意见反馈"
+            android:paddingBottom="14.0dp"
+            android:paddingLeft="12.0dp"
+            android:paddingTop="12.0dp"
+            android:singleLine="false"
+            android:textColor="#ff333333"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:id="@+id/feedback_contact_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="10.0dp"
+            android:background="@drawable/shape"
+            android:gravity="center_vertical"
+            android:hint="留下您的联系方式吧，以便跟您取得联系"
+            android:paddingLeft="12.0dp"
+            android:paddingRight="12.0dp"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="17.0sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

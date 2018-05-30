@@ -173,7 +173,7 @@ public class SearchBox extends RelativeLayout {
 				return false;
 			}
 		});
-		logoText = "Logo";
+		logoText = "搜索计算机知识";
 		micStateChanged();
 		mic.setOnClickListener(new OnClickListener() {
 			@Override

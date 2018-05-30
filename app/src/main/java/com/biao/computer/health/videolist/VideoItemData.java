@@ -16,6 +16,15 @@ public class VideoItemData implements Serializable {
     String vid;
     int length;
     String videosource;
+    String topicImg;
+
+    public String getTopicImg() {
+        return topicImg;
+    }
+
+    public void setTopicImg(String topicImg) {
+        this.topicImg = topicImg;
+    }
 
     public int getType() {
         return type;

@@ -1,7 +1,7 @@
 package com.biao.computer.commun.circledemo.listener;
 
 /**
- * Created by yiwei on 16/4/9.
+ * Created by biao on 16/4/9.
  */
 public interface RecycleViewItemListener {
 

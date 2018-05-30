@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by yiwei on 16/5/17.
+ * Created by biao on 16/5/17.
  */
 public class CircleAdapter extends BaseRecycleViewAdapter {
 
@@ -164,7 +164,7 @@ public class CircleAdapter extends BaseRecycleViewAdapter {
                         public void onClick(int position) {
                             String userName = favortDatas.get(position).getUser().getName();
                             String userId = favortDatas.get(position).getUser().getId();
-                            Toast.makeText(MyApplication.getContext(), userName + " &id = " + userId, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MyApplication.getContext(), userName, Toast.LENGTH_SHORT).show();
                         }
                     });
                     holder.praiseListView.setDatas(favortDatas);

@@ -108,7 +108,7 @@ public class SendActivity extends AppCompatActivity implements View.OnClickListe
                     return false;
                 }
             })
-                    .show();
+                    .setCancelable(false).show();
         }
 
 

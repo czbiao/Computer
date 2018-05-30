@@ -1,4 +1,4 @@
-package com.biao.computer.user;
+package com.biao.computer.user.userCustomer;
 
 import android.Manifest;
 import android.app.Activity;
@@ -19,7 +19,7 @@ import com.biao.computer.R;
 import com.biao.computer.user.login.activity.Login;
 
 public class UserCustomer extends Activity implements View.OnClickListener {
-    private Button user_people, user_wechat, user_customer, user_phone;
+    private Button user_wechat, user_customer, user_phone;
     private TextView goback;
 
     @Override
@@ -34,7 +34,7 @@ public class UserCustomer extends Activity implements View.OnClickListener {
     }
 
     private void init() {
-        user_people = (Button) findViewById(R.id.user_people);
+        //user_people = (Button) findViewById(R.id.user_people);
         user_wechat = (Button) findViewById(R.id.user_wechat);
         user_customer = (Button) findViewById(R.id.user_customer);
         user_phone = (Button) findViewById(R.id.user_phone);
@@ -42,7 +42,7 @@ public class UserCustomer extends Activity implements View.OnClickListener {
     }
 
     private void initListen() {
-        user_people.setOnClickListener(this);
+        //user_people.setOnClickListener(this);
         user_wechat.setOnClickListener(this);
         user_customer.setOnClickListener(this);
         user_phone.setOnClickListener(this);
@@ -51,15 +51,20 @@ public class UserCustomer extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId()) {
-            case R.id.user_people:
-                Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
-                break;
+//            case R.id.user_people:
+//                Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
+//                break;
             case R.id.user_wechat:
-                Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, weixinActivity.class);
+                startActivity(intent);
                 break;
             case R.id.user_customer:
-                Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, FeedBackActivity.class);
+                startActivity(intent);
                 break;
             case R.id.user_phone:
                 //Toast.makeText(this, "该功能正在开发中...", Toast.LENGTH_SHORT).show();
@@ -83,7 +88,7 @@ public class UserCustomer extends Activity implements View.OnClickListener {
 
                             }
                         })
-                        .setNegativeButton("否",null).show();
+                        .setNegativeButton("否",null).setCancelable(false).show();
                 break;
             case R.id.goback:
                 finish();

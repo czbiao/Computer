@@ -109,7 +109,7 @@ public class User_manager extends Activity implements View.OnClickListener {
                     return false;
                 }
             })
-                    .show();
+                    .setCancelable(false).show();
         }
         else getSeversJson();
 
@@ -153,7 +153,7 @@ public class User_manager extends Activity implements View.OnClickListener {
                 Log.i("user_manager----->到这", login_username.getText().toString());
                 try {
                     UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "UTF-8");
-                    HttpPost post = new HttpPost("http://139.199.171.66:8080/server/Servlet");
+                    HttpPost post = new HttpPost("http://biaohstc.cn:8080/server/Servlet");
                     post.setEntity(entity);
                     HttpResponse response = client.execute(post);
                     int a= response.getStatusLine().getStatusCode();

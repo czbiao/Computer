@@ -9,7 +9,7 @@ repositories {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "26.0.2"
     useLibrary 'org.apache.http.legacy'
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
@@ -22,7 +22,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        ndk{
+        ndk {
             abiFilters "arm64-v8a", "x86_64", "x86"
         }
     }
@@ -72,6 +72,11 @@ dependencies {
     compile files('libs/android-support-multidex.jar')
     compile files('libs/json-lib-2.2.2-jdk15.jar')
     compile files('libs/gson-2.3.jar')
+    //视频
+    compile files('libs/afinal_customer.jar')
+    compile files('libs/androidasync-1.2.1.jar')
+    compile files('libs/ion-1.2.1.jar')
+    compile files('libs/umeng-analytics-v5.2.4.jar')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
@@ -83,14 +88,14 @@ dependencies {
     compile 'pub.devrel:easypermissions:0.2.1'
     compile 'com.quinny898.library.persistentsearch:library:1.0.0-SNAPSHOT'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
-
-    //视频
-    compile 'com.android.support:recyclerview-v7:24.+'
-
+    compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-java:0.5.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.5.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.5.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.5.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.5.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/mail.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
 }

@@ -1,14 +1,25 @@
 package com.biao.computer.health.videolist.media;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +67,8 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
         private int position;
         private RelativeLayout showView;
         private TextView title,from;
+        private ImageView image_bg;
+        private Bitmap bitmap;
 
 
         public VideoViewHolder(View itemView) {
@@ -64,12 +77,30 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
             showView= (RelativeLayout) itemView.findViewById(R.id.showview);
             title= (TextView) itemView.findViewById(R.id.title);
             from= (TextView) itemView.findViewById(R.id.from);
+            image_bg = (ImageView) itemView.findViewById(R.id.image_bg);
         }
 
         public void update(final int position) {
             this.position = position;
             title.setText(list.get(position).getTitle());
-            title.setText(list.get(position).getVideosource());
+            from.setText(list.get(position).getVideosource());
+
+            Runnable networkImg = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        URL conn = new URL(list.get(position).getCover());
+                        InputStream in = conn.openConnection().getInputStream();
+                        bitmap = BitmapFactory.decodeStream(in);
+                        in.close();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+            new Thread(networkImg).start();
+
+            image_bg.setImageBitmap(bitmap);
             showView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -90,4 +121,5 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     public static interface onClick{
         void onclick(int position);
     }
+
 }

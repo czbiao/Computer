@@ -18,8 +18,10 @@ import android.widget.Toast;
 
 import com.biao.computer.MainActivity;
 import com.biao.computer.R;
+import com.biao.computer.user.favorArticle.FavorActivity;
 import com.biao.computer.user.login.activity.Login;
 import com.biao.computer.user.signcalendar.SignCalendarActivity;
+import com.biao.computer.user.userCustomer.UserCustomer;
 
 
 public class UserFragment extends Fragment implements View.OnClickListener {
@@ -55,19 +57,19 @@ public class UserFragment extends Fragment implements View.OnClickListener {
         user_btn_5 = (Button) view.findViewById(R.id.user_btn_5);
         user_friend = (Button) view.findViewById(R.id.user_friend);
         user_favor = (Button) view.findViewById(R.id.user_favor);
-        user_history = (Button) view.findViewById(R.id.user_history);
+        //user_history = (Button) view.findViewById(R.id.user_history);
         login_username = (TextView) view.findViewById(R.id.login_username);
         user_sign = (TextView) view.findViewById(R.id.user_sign);
-        user_sun = (TextView) view.findViewById(R.id.user_sun);
+        //user_sun = (TextView) view.findViewById(R.id.user_sun);
         user_btn_2.setOnClickListener(this);
         user_btn_3.setOnClickListener(this);
         user_btn_5.setOnClickListener(this);
         loginbtn.setOnClickListener(this);
         user_friend.setOnClickListener(this);
         user_favor.setOnClickListener(this);
-        user_history.setOnClickListener(this);
+        //user_history.setOnClickListener(this);
         user_sign.setOnClickListener(this);
-        user_sun.setOnClickListener(this);
+        //user_sun.setOnClickListener(this);
     }
 
     @Override
@@ -93,7 +95,7 @@ public class UserFragment extends Fragment implements View.OnClickListener {
                 //Toast.makeText(getActivity(), "该功能正在开发中...", Toast.LENGTH_SHORT).show();
                 intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra(Intent.EXTRA_TEXT, "http://139.199.171.66:8080/download/secret.apk");
+                intent.putExtra(Intent.EXTRA_TEXT, "点击网址即可进行下载————http://biaohstc.cn:8080/download/yixue.apk");
                 intent.setType("text/plain");
                 startActivity(Intent.createChooser(intent,"分享到"));
                 break;
@@ -110,21 +112,21 @@ public class UserFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.user_favor:
-                intent = new Intent(getActivity(), MainActivity.class);
+                intent = new Intent(getActivity(), FavorActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.user_history:
-                intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.user_history:
+//                intent = new Intent(getActivity(), MainActivity.class);
+//                startActivity(intent);
+//                break;
             case R.id.user_sign:
                 intent = new Intent(getActivity(), SignCalendarActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.user_sun:
-                intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.user_sun:
+//                intent = new Intent(getActivity(), MainActivity.class);
+//                startActivity(intent);
+//                break;
         }
     }
 

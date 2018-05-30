@@ -22,10 +22,11 @@
             android:layout_height="25dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:drawableRight="@drawable/mail"
             android:background="@null"
-            android:text="我觉得我很美"
-            android:textColor="@color/white"/>
+            android:text="分享心天地"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/publishbtn"

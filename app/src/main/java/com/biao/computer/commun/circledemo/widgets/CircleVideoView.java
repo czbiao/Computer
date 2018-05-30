@@ -28,7 +28,7 @@ import java.io.File;
 import java.io.InputStream;
 
 /**
- * Created by yiwei on 16/5/23.
+ * Created by biao on 16/5/23.
  */
 public class CircleVideoView extends LinearLayout implements VideoLoadMvpView, ListItem {
 

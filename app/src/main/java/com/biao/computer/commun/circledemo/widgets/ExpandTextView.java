@@ -14,7 +14,7 @@ import com.biao.computer.R;
 import com.biao.computer.commun.circledemo.spannable.CircleMovementMethod;
 
 /**
- * Created by yiwei on 16/7/10.
+ * Created by biao on 16/7/10.
  */
 public class ExpandTextView extends LinearLayout {
     public static final int DEFAULT_MAX_LINES = 3;
